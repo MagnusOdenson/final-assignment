@@ -9,7 +9,7 @@ const config = {
   title: 'Final Assignment',
   tagline: '',
   url: 'https://magnusodenson.github.io',
-  baseUrl: '/final-assignment/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -24,7 +24,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/final-assignment/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // editUrl: 'http//s://github.com/KomunikacjaTechnicznaVistula/michal-olender/tree/final-assignment',

@@ -1,6 +1,6 @@
 ---
 id: Basics
-slug: /
+slug: final-assignment
 ---
 
 # Intro
