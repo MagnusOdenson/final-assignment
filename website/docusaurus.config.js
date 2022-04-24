@@ -7,16 +7,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Final Assignment',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  tagline: '',
+  url: 'https://magnusodenson.github.io',
+  baseUrl: '/final-assignment/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'MagnusOdenson', // Usually your GitHub org/user name.
-  projectName: 'final-assignment.github.io ', // Usually your repo name.
-  deploymentBranch: 'final-assignment',
-  trailingSlash: false,
+  organizationName: 'magnusodenson', // Usually your GitHub org/user name.
+  projectName: 'final-assignment', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: true,
 
   presets: [
     [
@@ -24,8 +24,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/'
-          // sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // editUrl: 'http//s://github.com/KomunikacjaTechnicznaVistula/michal-olender/tree/final-assignment',
         },
@@ -47,7 +47,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/KomunikacjaTechnicznaVistula/michal-olender/tree/final-assignment',
+            href: 'https://github.com/MagnusOdenson/final-assignment',
             label: 'GitHub',
             position: 'right',
           },
