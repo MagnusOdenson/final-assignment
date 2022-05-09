@@ -7,16 +7,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Final Assignment',
-  tagline: 'Markdown v HTML',
+  tagline: 'MD v HTML',
   url: 'https://magnusodenson.github.io',
-  baseUrl: '/',
+  baseUrl: '/final-assignment/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'magnusodenson', // Usually your GitHub org/user name.
   projectName: 'final-assignment', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
-  trailingSlash: false,
+  trailingSlash: true,
+
 
   presets: [
     [
@@ -24,13 +24,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/MagnusOdenson/final-assignment/',
+          routeBasePath: '/'
+          // editUrl: 'https://github.com/MagnusOdenson/final-assignment',
         },
-        blog: false,
-
+        blog: false, 
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -42,29 +41,34 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Final Assignment',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
+        // title: 'My Site',
+        // logo: {
+        //   alt: 'My Site Logo',
+        //   src: 'img/logo.svg',
+        // },
         items: [
           {
             type: 'doc',
-            docId: 'basics',
+            docId: 'intro',
             position: 'left',
-            label: 'Basics',
+            label: 'MD v HTML v XML',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/MagnusOdenson/final-assignment/',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
+      },
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        
+        copyright: `Copyright © ${new Date().getFullYear()} Final Assignment by Michał Olender.`,
       },
       prism: {
         theme: lightCodeTheme,
